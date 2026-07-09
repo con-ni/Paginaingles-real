@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ener-Wave | Sustainable and Infinite Marine Energy from the Ocean</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Ener-Wave leads the marine energy revolution. Discover how we convert the endless force of the waves into clean and constant electricity to sustainably power thousands of homes.">
+    <meta name="keywords" content="renewable energy, wave energy, tidal energy, ener-wave, sustainability, ocean power, green energy, login ener-wave">
+    <meta name="author" content="Ener-Wave Corporation">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+
+    <!-- ==========================================================================
+         HEADER & NAVBAR
+         ========================================================================== -->
+    <header class="header">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="#inicio" class="logo" id="logo-brand">
+                <img src="assets/logo.png" alt="Ener-Wave Logo" class="logo-img" onerror="this.style.display='none'">
+                <span>Ener-Wave</span>
+            </a>
+            
+            <!-- Navigation Menu -->
+            <nav>
+                <ul class="nav-menu" id="nav-links">
+                    <li><a href="#inicio" class="nav-link active">Start</a></li>
+                    <li><a href="#quienes-somos" class="nav-link">About Us</a></li>
+                    <li><a href="#tecnologia" class="nav-link">Technology</a></li>
+                    <li><a href="#equipo" class="nav-link">Team</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#portal" class="nav-link">Client Portal</a></li>
+                    <li><a href="#contacto" class="nav-link">Contact</a></li>
+                    <li class="nav-btn"><a href="#portal" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.85rem;">Log In</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Responsive Mobile Toggle -->
+            <button class="hamburger" aria-label="Menu" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg" style="background-image: url('assets/hero-bg.png');"></div>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    The endless power of the sea
+                </div>
+                <h1 class="hero-title">Powering <br><span class="gradient-text">the future with ocean energy</span></h1>
+                <p class="hero-description">Ener-Wave transforms the endless motion of ocean waves into reliable, carbon-free electricity. Our innovative technology delivers sustainable power 24/7, helping communities and industries reduce their dependence on fossil fuels.</p>
+                <div class="hero-buttons">
+                    <a href="#tecnologia" class="btn btn-primary">
+                        Explore Our Technology
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                    <a href="#quienes-somos" class="btn btn-secondary">Learn Our Story</a>
+                </div>
+            </div>
+            
+            <!-- Dynamic Vector Illustration for visual impact -->
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <svg class="ocean-energy-infographic" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="glow-grad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8"/>
+                                <stop offset="100%" stop-color="#27c97e" stop-opacity="0.1"/>
+                            </linearGradient>
+                            <linearGradient id="line-grad" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#00f2fe"/>
+                                <stop offset="100%" stop-color="#27c97e"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="100" cy="90" r="60" stroke="url(#glow-grad)" stroke-width="1.5" stroke-dasharray="4 4" />
+                        <circle cx="100" cy="90" r="75" stroke="url(#glow-grad)" stroke-width="0.8" />
+                        
+                        <path d="M60 115 C 60 115, 75 110, 100 115 C 125 120, 140 115, 140 115 L 135 128 L 65 128 Z" fill="rgba(10, 25, 47, 0.85)" stroke="url(#line-grad)" stroke-width="2" />
+                        
+                        <rect x="90" y="85" width="20" height="30" rx="4" fill="rgba(0, 242, 254, 0.15)" stroke="#00f2fe" stroke-width="2" />
+                        <circle cx="100" cy="100" r="5" fill="#27c97e" filter="drop-shadow(0 0 8px #27c97e)"/>
+                        
+                        <line x1="100" y1="65" x2="100" y2="85" stroke="#00f2fe" stroke-width="3" stroke-linecap="round" />
+                        
+                        <path d="M80 65 C80 50, 120 50, 120 65 Z" fill="rgba(39, 201, 126, 0.25)" stroke="#27c97e" stroke-width="2" />
+                        
+                        <path d="M10 135 Q 35 125, 60 135 T 110 135 T 160 135 T 190 135" stroke="#00f2fe" stroke-width="3" stroke-linecap="round" fill="none">
+                            <animate attributeName="d" 
+                                     values="M10 135 Q 35 125, 60 135 T 110 135 T 160 135 T 190 135;
+                                             M10 135 Q 35 145, 60 135 T 110 135 T 160 135 T 190 135;
+                                             M10 135 Q 35 125, 60 135 T 110 135 T 160 135 T 190 135" 
+                                     dur="4s" repeatCount="indefinite" />
+                        </path>
+                        
+                        <path d="M100 45 L 96 53 L 100 53 L 98 60 L 106 50 L 101 50 Z" fill="#00f2fe" filter="drop-shadow(0 0 5px #00f2fe)"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT US SECTION
+         ========================================================================== -->
+    <section id="quienes-somos" class="history-section section-padding">
+        <div class="bg-wave-container">
+            <div class="wave-element"></div>
+            <div class="wave-element wave2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-subtitle">Discover the origin of our passion for the sea and how we managed to harness the most untamable energy on the planet.</p>
+            </div>
+            
+            <div class="history-grid">
+                <div class="history-img-wrapper">
+                    <img src="assets/buoy.svg" alt="Ener-Wave Wave Energy Converter Buoy" class="history-img" style="background: linear-gradient(180deg, #060d1a 0%, #03070f 100%); object-fit: contain;">
+                    <div class="history-tag">
+                        <span class="history-tag-number">2024</span>
+                        <span class="history-tag-text">Year of Foundation</span>
+                    </div>
+                </div>
+                
+                <div class="history-content">
+                    <h3 class="company-origin-title">Born from the relentless heartbeat of the <span class="gradient-text">ocean</span></h3>
+                    <p class="history-paragraph">
+                        <!-- Grammar Target: Passive Voice (Past) -->
+                        Ener-Wave <strong>was founded</strong> by a prominent group of naval engineers and climate scientists in 2024. The company emerged from a simple yet powerful revelation off the Patagonian coast: while solar energy relied on daylight and wind energy depended on unstable gusts, the ocean waves never stopped. Their constant ebb and flow concealed the planet's greatest untapped energy potential.
+                    </p>
+                    <p class="history-paragraph">
+                        Driven by this discovery and motivated by the global climate urgency, we design advanced marine engineering solutions. We develop closed-loop wave energy converters capable of withstanding the ocean's most hostile storms, converting tidal impact into constant, emission-free electricity directly to the onshore grid.
+                    </p>
+                    
+                    <div class="history-milestones">
+                        <div class="milestone-item">
+                            <div class="milestone-icon">🌊</div>
+                            <h4 class="milestone-title">Environmental Mission</h4>
+                            <p class="milestone-desc">To guarantee a self-sufficient global energy mix powered by the ocean.</p>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-icon">⚡</div>
+                            <h4 class="milestone-title">Distinctive Innovation</h4>
+                            <p class="milestone-desc">Self-regulating wave energy patents with zero marine ecological impact.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         TECHNOLOGY SECTION
+         ========================================================================== -->
+    <section id="tecnologia" class="section-padding" style="background-color: var(--bg-darker);">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Our Technology</h2>
+                <p class="section-subtitle">We develop cutting-edge mechanical and software solutions to harness the power of the seas.</p>
+            </div>
+            
+            <div class="tech-grid">
+                <article class="tech-card glassmorphism">
+                    <div class="tech-icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M2 12c4-4 8-4 12 0s8 4 12 0"/></svg>
+                    </div>
+                    <h3 class="tech-title">Wave Energy</h3>
+                    <p class="tech-desc">Systems that harness the vertical and horizontal kinetic thrust of surface waves using heavy-duty hydropneumatic oscillating buoys.</p>
+                    <ul class="tech-list">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            High Operational Consistency (94%)
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Zero Acoustic Emissions
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Biodegradable Anchors
+                        </li>
+                    </ul>
+                </article>
+                
+                <article class="tech-card glassmorphism">
+                    <div class="tech-icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                    </div>
+                    <h3 class="tech-title">Tidal Energy</h3>
+                    <p class="tech-desc">Submerged bidirectional turbine generators that harness rising and falling tidal flows in a predictable and safe manner.</p>
+                    <ul class="tech-list">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            100% Energy Predictability
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Marine fauna-safe design
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Direct Underwater Transmission
+                        </li>
+                    </ul>
+                </article>
+                
+                <article class="tech-card glassmorphism">
+                    <div class="tech-icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+                    </div>
+                    <h3 class="tech-title">Hybrid Offshore Farms</h3>
+                    <p class="tech-desc">Integrated modular platforms combining floating offshore wind turbines and bifacial solar panels on the converter's surface.</p>
+                    <ul class="tech-list">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Triple generation at a single point
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Isolated floating substation
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Continuous AI Satellite Monitoring
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         MEET THE TEAM SECTION (New addition for Rubric requirements)
+         ========================================================================== -->
+    <section id="equipo" class="team-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Meet the <span class="gradient-text">Team</span></h2>
+                <p class="section-subtitle">The talented professionals behind Ener-Wave's technology, security, infrastructure, and data intelligence.</p>
+            </div>
+
+            <div class="team-grid-4">
+
+                <!-- Piero Cordova -->
+                <article class="team-card">
+                    <div class="team-card-header team-cyan">
+                        <div class="team-avatar-ring">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                        <div class="team-initials">PC</div>
+                    </div>
+                    <div class="team-card-body">
+                        <span class="team-role-badge badge-cyan">Software Developer</span>
+                        <h3 class="team-name">Piero Cordova</h3>
+                        <p class="team-desc">Designs and maintains the platform systems that power real-time energy monitoring and client-facing applications.</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">Full-Stack</span>
+                            <span class="skill-tag">APIs</span>
+                            <span class="skill-tag">Cloud</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Micaela Miranda -->
+                <article class="team-card">
+                    <div class="team-card-header team-green">
+                        <div class="team-avatar-ring">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <div class="team-initials">MM</div>
+                    </div>
+                    <div class="team-card-body">
+                        <span class="team-role-badge badge-green">Cybersecurity Analyst</span>
+                        <h3 class="team-name">Micaela Miranda</h3>
+                        <p class="team-desc">Ensures all infrastructure and client data are protected with advanced threat monitoring and bank-grade encryption.</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">Threat Intel</span>
+                            <span class="skill-tag">Encryption</span>
+                            <span class="skill-tag">SOC</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Constanza Roa -->
+                <article class="team-card">
+                    <div class="team-card-header team-blue">
+                        <div class="team-avatar-ring">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <div class="team-initials">CR</div>
+                    </div>
+                    <div class="team-card-body">
+                        <span class="team-role-badge badge-blue">IT Support</span>
+                        <h3 class="team-name">Constanza Roa</h3>
+                        <p class="team-desc">Keeps technology infrastructure running smoothly, providing technical support and ensuring system reliability across all operations.</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">Networking</span>
+                            <span class="skill-tag">Systems</span>
+                            <span class="skill-tag">Help Desk</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Benjamin Bernal -->
+                <article class="team-card">
+                    <div class="team-card-header team-purple">
+                        <div class="team-avatar-ring">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+                            </svg>
+                        </div>
+                        <div class="team-initials">BB</div>
+                    </div>
+                    <div class="team-card-body">
+                        <span class="team-role-badge badge-purple">Data Scientist</span>
+                        <h3 class="team-name">Benjamin Bernal</h3>
+                        <p class="team-desc">Transforms ocean telemetry and energy output data into actionable insights, driving smarter forecasting and operational efficiency.</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">ML/AI</span>
+                            <span class="skill-tag">Analytics</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         FAQ SECTION (Zero Conditional Target)
+         ========================================================================== -->
+    <section id="faq" class="section-padding" style="background-color: var(--bg-darker); border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about our operations and technology.</p>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="display: flex; flex-direction: column; gap: 15px;">
+                    <!-- FAQ 1 -->
+                    <div class="glassmorphism" style="padding: 20px; border-radius: var(--radius-md);">
+                        <h4 style="color: var(--primary); margin-bottom: 8px;">What happens if the ocean waves are weak?</h4>
+                        <p style="color: var(--text-secondary); margin: 0;">If the waves are weak, the buoys generate less electricity.</p>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="glassmorphism" style="padding: 20px; border-radius: var(--radius-md);">
+                        <h4 style="color: var(--primary); margin-bottom: 8px;">What happens if a buoy stops working?</h4>
+                        <p style="color: var(--text-secondary); margin: 0;">If a buoy stops working, our technicians repair it immediately.</p>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="glassmorphism" style="padding: 20px; border-radius: var(--radius-md);">
+                        <h4 style="color: var(--primary); margin-bottom: 8px;">What happens if the system detects a problem?</h4>
+                        <p style="color: var(--text-secondary); margin: 0;">If the system detects a problem, it sends an alert to our team.</p>
+                    </div>
+                    <!-- FAQ 4 -->
+                    <div class="glassmorphism" style="padding: 20px; border-radius: var(--radius-md);">
+                        <h4 style="color: var(--primary); margin-bottom: 8px;">What happens if users visit our website?</h4>
+                        <p style="color: var(--text-secondary); margin: 0;">If users visit our website, they learn about our products and services.</p>
+                    </div>
+                    <!-- FAQ 5 -->
+                    <div class="glassmorphism" style="padding: 20px; border-radius: var(--radius-md);">
+                        <h4 style="color: var(--primary); margin-bottom: 8px;">What happens if a customer fills out the contact form?</h4>
+                        <p style="color: var(--text-secondary); margin: 0;">If a customer fills out the contact form, we receive their message immediately.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         CLIENT PORTAL (Login & Register)
+         ========================================================================== -->
+    <section id="portal" class="portal-section section-padding" style="background: linear-gradient(180deg, var(--bg-darker) 0%, var(--bg-dark) 100%); border-top: 1px solid var(--border-color);">
+        <div class="container portal-wrapper">
+
+            <!-- LEFT PANEL: info + buoy visual -->
+            <div class="portal-left-panel">
+                <div class="portal-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Secure Access
+                </div>
+                <h2 class="portal-left-title"><span class="gradient-text">Telemetry</span><br>Control Portal</h2>
+                <p class="portal-left-desc">Monitor your ocean energy infrastructure in real time. Register or log in to access the Ener-Wave dashboard.</p>
+
+                <div class="portal-feature-list">
+                    <div class="portal-feature-item">
+                        <div class="portal-feature-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                        </div>
+                        <div>
+                            <h4>Live MW Monitoring</h4>
+                            <p>Track real-time megawatt output from your associated power plant.</p>
+                        </div>
+                    </div>
+                    <div class="portal-feature-item">
+                        <div class="portal-feature-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <div>
+                            <h4>Bank-Grade Encryption</h4>
+                            <p>Your data and infrastructure are protected at every layer.</p>
+                        </div>
+                    </div>
+                    <div class="portal-feature-item">
+                        <div class="portal-feature-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <h4>24/7 Uptime Guarantee</h4>
+                            <p>Our systems run continuously, just like the ocean itself.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mini buoy visual -->
+                <div class="portal-buoy-mini">
+                    <img src="assets/buoy.svg" alt="Wave energy buoy" class="portal-buoy-img">
+                </div>
+            </div>
+
+            <!-- RIGHT PANEL: auth card -->
+            <div class="portal-right-panel">
+                <div class="auth-wrapper" id="auth-wrapper">
+                    <div class="auth-card-inner">
+
+                        <!-- LOGIN -->
+                        <div class="auth-card-front glassmorphism">
+                            <div class="auth-logo-mark">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            </div>
+                            <h3 class="form-title">Welcome Back</h3>
+                            <p class="form-subtitle">Log in to your operational account.</p>
+                            <div class="form-alert" id="login-alert"></div>
+
+                            <form id="login-form" novalidate>
+                                <div class="form-group">
+                                    <label class="form-label" for="login-email">Email Address</label>
+                                    <div class="form-control-wrapper">
+                                        <input type="email" id="login-email" class="form-control" placeholder="name@email.com" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="login-password">Password</label>
+                                    <div class="form-control-wrapper">
+                                        <input type="password" id="login-password" class="form-control" placeholder="••••••••" required>
+                                    </div>
+                                </div>
+                                <div class="form-helper">
+                                    <label class="checkbox-label"><input type="checkbox" id="login-remember"> Remember me</label>
+                                    <a href="#" class="forgot-password">Forgot password?</a>
+                                </div>
+                                <button type="submit" class="btn btn-primary" style="width:100%; margin-top: 8px;">Enter System</button>
+                            </form>
+
+                            <div class="portal-divider"><span>or</span></div>
+                            <p class="demo-hint">Try demo: <strong>demo@enerwave.com</strong> / <strong>password123</strong></p>
+
+                            <div class="form-footer">Don't have an account? <span class="form-footer-link" id="show-register">Sign up</span></div>
+                        </div>
+
+                        <!-- REGISTER -->
+                        <div class="auth-card-back glassmorphism">
+                            <div class="auth-logo-mark">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+                            </div>
+                            <h3 class="form-title">Create Account</h3>
+                            <p class="form-subtitle">Join Ener-Wave and manage your clean generation.</p>
+                            <div class="form-alert" id="register-alert"></div>
+
+                            <form id="register-form" novalidate>
+                                <div class="form-group">
+                                    <label class="form-label" for="reg-name">Organization Name</label>
+                                    <input type="text" id="reg-name" class="form-control" placeholder="E.g. Atacama Operations" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="reg-email">Email Address</label>
+                                    <input type="email" id="reg-email" class="form-control" placeholder="name@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="reg-password">Password</label>
+                                    <input type="password" id="reg-password" class="form-control" placeholder="Minimum 8 characters" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="reg-confirm-password">Confirm Password</label>
+                                    <input type="password" id="reg-confirm-password" class="form-control" placeholder="••••••••" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary" style="width:100%; margin-top: 8px;">Create Account</button>
+                            </form>
+
+                            <div class="form-footer">Already a member? <span class="form-footer-link" id="show-login">Log In</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- DASHBOARD (shown after login) -->
+                <div class="user-dashboard-panel glassmorphism" id="user-dashboard" style="display:none;">
+                    <div class="dash-header">
+                        <div class="user-avatar-badge" id="dash-avatar">EW</div>
+                        <div>
+                            <h3 class="form-title" style="margin-bottom:2px; text-align:left;">Operator Portal</h3>
+                            <p style="color:var(--text-secondary); font-size:0.9rem;">Welcome, <span id="dashboard-user-name" class="gradient-text" style="font-weight:700;">Innovation</span></p>
+                        </div>
+                    </div>
+                    <div class="dash-metrics">
+                        <div class="dash-metric">
+                            <span class="dash-metric-label">⚡ Live Output</span>
+                            <span class="dash-metric-value" id="dash-power">342.60 MW</span>
+                        </div>
+                        <div class="dash-metric">
+                            <span class="dash-metric-label">🌊 Active Buoys</span>
+                            <span class="dash-metric-value" id="dash-buoys">247</span>
+                        </div>
+                        <div class="dash-metric">
+                            <span class="dash-metric-label">🔋 Energy Today</span>
+                            <span class="dash-metric-value" id="dash-energy">4,212.8 MWh</span>
+                        </div>
+                        <div class="dash-metric">
+                            <span class="dash-metric-label">🛡️ System Status</span>
+                            <span class="dash-metric-value dash-status-ok">Operational</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary" id="dashboard-logout" style="width:100%; margin-top:8px;">Secure Log Out</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION (First Conditional Target)
+         ========================================================================== -->
+    <section id="contacto" class="section-padding" style="background-color: var(--bg-darker); border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Contact Us</h2>
+                <!-- Grammar Target: First Conditional -->
+                <p class="section-subtitle">If you send us a message, our support team will respond within 24 business hours.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info-card glassmorphism">
+                    <div class="contact-info-top">
+                        <h3>Ener-Wave HQ</h3>
+                        <p>Global infrastructure, central technical offices, and marine physics laboratories.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-text">
+                                    <h5>Location</h5>
+                                    <p>Av. del Mar Costanera 1420, Valparaíso, Chile</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-text">
+                                    <h5>Technical Email</h5>
+                                    <p>contacto@enerwave.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-text">
+                                    <h5>Operational Phone</h5>
+                                    <p>+56 32 245 8890</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-card glassmorphism">
+                    <h3 class="form-title" style="text-align: left; margin-bottom: 8px;">Send a Message</h3>
+                    <div class="form-alert" id="contact-alert" style="margin-bottom: 16px;"></div>
+
+                    <form id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label class="form-label" for="con-name">Full Name</label>
+                            <div class="form-control-wrapper">
+                                <input type="text" id="con-name" class="form-control" placeholder="E.g. Roberto Fuentes" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="con-email">Email Address</label>
+                            <div class="form-control-wrapper">
+                                <input type="email" id="con-email" class="form-control" placeholder="name@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="con-message">Message / Inquiry</label>
+                            <div class="form-control-wrapper">
+                                <textarea id="con-message" class="form-control" rows="5" placeholder="How can we help you?" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Secure Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; 2026 Ener-Wave Corporation. All rights reserved.
+                </div>
+                <div class="footer-legal-links">
+                    <a href="#">Privacy</a>
+                    <span>&middot;</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle -->
+    <script src="app.js"></script>
+</body>
+</html>

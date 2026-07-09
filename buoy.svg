@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" fill="none">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#03070f"/>
+    </radialGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d2a4a"/>
+      <stop offset="100%" stop-color="#030a15"/>
+    </linearGradient>
+    <linearGradient id="buoyBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3a5c"/>
+      <stop offset="100%" stop-color="#0d1f35"/>
+    </linearGradient>
+    <linearGradient id="coreGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#27c97e"/>
+    </linearGradient>
+    <filter id="blur4">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="blur8">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="600" height="480" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <circle cx="80" cy="40" r="1" fill="white" opacity="0.6"/>
+  <circle cx="150" cy="25" r="1.2" fill="white" opacity="0.8"/>
+  <circle cx="220" cy="55" r="0.8" fill="white" opacity="0.5"/>
+  <circle cx="310" cy="30" r="1" fill="white" opacity="0.7"/>
+  <circle cx="390" cy="18" r="1.5" fill="white" opacity="0.9"/>
+  <circle cx="460" cy="45" r="1" fill="white" opacity="0.6"/>
+  <circle cx="530" cy="28" r="0.8" fill="white" opacity="0.5"/>
+  <circle cx="50" cy="80" r="0.9" fill="white" opacity="0.4"/>
+  <circle cx="560" cy="70" r="1.1" fill="white" opacity="0.6"/>
+  <circle cx="490" cy="90" r="0.7" fill="#00f2fe" opacity="0.8"/>
+  <circle cx="120" cy="100" r="0.8" fill="#00f2fe" opacity="0.6"/>
+
+  <!-- Horizon glow -->
+  <ellipse cx="300" cy="230" rx="280" ry="40" fill="#00f2fe" opacity="0.04" filter="url(#blur8)"/>
+
+  <!-- Ocean base -->
+  <rect x="0" y="250" width="600" height="230" fill="url(#ocean)"/>
+
+  <!-- Ocean wave layers -->
+  <path d="M-20 265 Q 50 250, 120 265 T 260 265 T 400 265 T 540 265 T 620 265 L620 480 L-20 480Z" fill="#0d2a4a" opacity="0.7"/>
+  <path d="M-20 280 Q 60 268, 140 280 T 300 278 T 460 282 T 620 278 L620 480 L-20 480Z" fill="#0a1f38" opacity="0.8"/>
+  <path d="M-20 295 Q 70 283, 150 295 T 320 292 T 490 297 T 620 293 L620 480 L-20 480Z" fill="#071528" opacity="0.9"/>
+
+  <!-- Wave shimmer lines -->
+  <path d="M30 268 Q80 260 130 268" stroke="#00f2fe" stroke-width="1.5" opacity="0.25" stroke-linecap="round"/>
+  <path d="M200 272 Q260 264 320 272" stroke="#00f2fe" stroke-width="1" opacity="0.2" stroke-linecap="round"/>
+  <path d="M400 270 Q450 262 510 270" stroke="#27c97e" stroke-width="1" opacity="0.2" stroke-linecap="round"/>
+  <path d="M100 285 Q170 278 240 285" stroke="#00f2fe" stroke-width="0.8" opacity="0.15" stroke-linecap="round"/>
+  <path d="M350 288 Q420 280 490 288" stroke="#00f2fe" stroke-width="0.8" opacity="0.15" stroke-linecap="round"/>
+
+  <!-- Buoy glow base -->
+  <ellipse cx="300" cy="270" rx="80" ry="30" fill="url(#glow1)" filter="url(#blur8)"/>
+
+  <!-- Underwater cables -->
+  <path d="M272 295 Q268 330 265 380 Q262 420 258 460" stroke="#00f2fe" stroke-width="2.5" opacity="0.4" stroke-linecap="round"/>
+  <path d="M300 298 Q300 340 300 390 Q300 430 300 470" stroke="#27c97e" stroke-width="2" opacity="0.35" stroke-linecap="round"/>
+  <path d="M328 295 Q332 330 335 380 Q338 420 342 460" stroke="#00f2fe" stroke-width="2.5" opacity="0.4" stroke-linecap="round"/>
+
+  <!-- Buoy flotation ring -->
+  <ellipse cx="300" cy="282" rx="72" ry="18" fill="#0d1f35" stroke="#00f2fe" stroke-width="2"/>
+  <ellipse cx="300" cy="282" rx="72" ry="18" fill="none" stroke="#00f2fe" stroke-width="1" opacity="0.5"/>
+  <!-- Ring detail lines -->
+  <path d="M228 282 Q264 272 300 282 Q336 292 372 282" stroke="#1a3a5c" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Buoy main body cylinder -->
+  <rect x="268" y="195" width="64" height="90" rx="8" fill="url(#buoyBody)" stroke="#1a4a70" stroke-width="1.5"/>
+
+  <!-- Body panel lines -->
+  <line x1="268" y1="220" x2="332" y2="220" stroke="#1a4a70" stroke-width="1" opacity="0.6"/>
+  <line x1="268" y1="248" x2="332" y2="248" stroke="#1a4a70" stroke-width="1" opacity="0.6"/>
+
+  <!-- Solar panel on body -->
+  <rect x="276" y="225" width="20" height="14" rx="2" fill="#0d2a4a" stroke="#4facfe" stroke-width="1"/>
+  <line x1="286" y1="225" x2="286" y2="239" stroke="#4facfe" stroke-width="0.5" opacity="0.6"/>
+  <line x1="276" y1="232" x2="296" y2="232" stroke="#4facfe" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Central glowing core window -->
+  <rect x="288" y="223" width="24" height="30" rx="4" fill="#001a2e" stroke="url(#coreGlow)" stroke-width="2"/>
+  <rect x="288" y="223" width="24" height="30" rx="4" fill="url(#coreGlow)" opacity="0.15"/>
+  <!-- Inner glow dot -->
+  <circle cx="300" cy="238" r="6" fill="#00f2fe" opacity="0.9" filter="url(#blur2)"/>
+  <circle cx="300" cy="238" r="3" fill="white" opacity="0.95"/>
+
+  <!-- Arms / struts -->
+  <line x1="268" y1="230" x2="238" y2="252" stroke="#1a4a70" stroke-width="3" stroke-linecap="round"/>
+  <line x1="332" y1="230" x2="362" y2="252" stroke="#1a4a70" stroke-width="3" stroke-linecap="round"/>
+  <!-- Arm end circles (joints) -->
+  <circle cx="238" cy="254" r="5" fill="#0a1f38" stroke="#00f2fe" stroke-width="1.5"/>
+  <circle cx="362" cy="254" r="5" fill="#0a1f38" stroke="#00f2fe" stroke-width="1.5"/>
+
+  <!-- Tower / mast above body -->
+  <rect x="295" y="138" width="10" height="58" rx="2" fill="#132840" stroke="#1a4a70" stroke-width="1"/>
+
+  <!-- Top platform -->
+  <rect x="278" y="132" width="44" height="10" rx="3" fill="#0d2a4a" stroke="#1a4a70" stroke-width="1.5"/>
+
+  <!-- Antenna -->
+  <line x1="300" y1="132" x2="300" y2="100" stroke="#1a4a70" stroke-width="2" stroke-linecap="round"/>
+  <line x1="285" y1="118" x2="315" y2="118" stroke="#1a4a70" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Antenna tip light -->
+  <circle cx="300" cy="98" r="4" fill="#ff6b35" opacity="0.9" filter="url(#blur2)"/>
+  <circle cx="300" cy="98" r="2" fill="white" opacity="0.95"/>
+
+  <!-- Rotating beacon light on top platform -->
+  <circle cx="300" cy="132" r="10" fill="#00f2fe" opacity="0.15" filter="url(#blur4)"/>
+  <circle cx="300" cy="132" r="5" fill="#00f2fe" opacity="0.5" filter="url(#blur2)"/>
+  <circle cx="300" cy="132" r="3" fill="white" opacity="0.9"/>
+
+  <!-- Small indicator lights on body -->
+  <circle cx="278" cy="260" r="3" fill="#27c97e" opacity="0.9" filter="url(#blur2)"/>
+  <circle cx="322" cy="260" r="3" fill="#27c97e" opacity="0.9" filter="url(#blur2)"/>
+  <circle cx="278" cy="208" r="2.5" fill="#00f2fe" opacity="0.8"/>
+  <circle cx="322" cy="208" r="2.5" fill="#00f2fe" opacity="0.8"/>
+
+  <!-- Cyan neon edge trim on flotation ring -->
+  <path d="M228 282 Q264 275 300 282 Q336 289 372 282" stroke="#00f2fe" stroke-width="2" opacity="0.6" stroke-linecap="round"/>
+
+  <!-- Water reflection of buoy -->
+  <ellipse cx="300" cy="298" rx="55" ry="8" fill="#00f2fe" opacity="0.06" filter="url(#blur4)"/>
+  <path d="M260 305 Q300 300 340 305" stroke="#00f2fe" stroke-width="1" opacity="0.2" stroke-linecap="round"/>
+
+  <!-- Distant buoys in background -->
+  <ellipse cx="100" cy="255" rx="12" ry="4" fill="#0d2a4a" stroke="#00f2fe" stroke-width="0.8" opacity="0.5"/>
+  <rect x="96" y="238" width="8" height="17" rx="2" fill="#0a1f38" opacity="0.6"/>
+  <circle cx="100" cy="235" r="2" fill="#00f2fe" opacity="0.7" filter="url(#blur2)"/>
+
+  <ellipse cx="500" cy="258" rx="10" ry="3.5" fill="#0d2a4a" stroke="#27c97e" stroke-width="0.8" opacity="0.4"/>
+  <rect x="497" y="244" width="6" height="14" rx="2" fill="#0a1f38" opacity="0.5"/>
+  <circle cx="500" cy="242" r="2" fill="#27c97e" opacity="0.7" filter="url(#blur2)"/>
+
+  <!-- Energy wave ripples around buoy base -->
+  <ellipse cx="300" cy="280" rx="95" ry="12" fill="none" stroke="#00f2fe" stroke-width="1" opacity="0.12"/>
+  <ellipse cx="300" cy="280" rx="115" ry="16" fill="none" stroke="#00f2fe" stroke-width="0.8" opacity="0.07"/>
+</svg>
